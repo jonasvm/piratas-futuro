@@ -1,0 +1,386 @@
+body {
+	font-size: 62.5%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+body * {
+	font-size: 100%;
+}
+
+html {
+  background: url(images/back.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+p {
+	font-size: 13px;
+   font-family: 'Muli', serif;
+}
+#header {
+  width: 100%;
+  height: 23%;
+  margin: 0;
+  position: absolute;
+}
+
+#content {
+	width: 92%;
+	height: 68%;
+	margin: 13% 0% 0% 3.9%;
+	display: block;
+	background-color: white;
+	padding: 10px 0px 0px 10px;
+	position: absolute;
+	border-radius: 3px;
+	border: 0.5px solid black;
+	overflow-x: hidden;
+}
+
+#contentTransparent {
+	width: 100%;
+  height: 74%;
+  margin-top: 10.85%;
+  position: absolute;
+	overflow-x: hidden;
+}
+
+#footer {
+  width: 100%;
+  height: 13%;
+  margin-top: 40.9%;
+  position: absolute;
+}
+.adm {
+  margin: 4.7% 0% 0% 15%;
+  color: white;
+  font-size: 40px;
+  font-family: 'Englebert', serif;
+  display: inline-block;
+  position: relative;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+li a:visited {
+	color: #555555  ;
+}
+li a:hover {
+	color:   #800000   ;
+}
+
+a:visited {
+	color: #555555;
+}
+a:hover {
+	color: #800000;
+}
+
+#header li {
+	float: left;
+	padding: 0px 0px 0px 40px;
+}
+#header ul {
+	display: inline-block;
+	margin: 5.7% 5.7% 0% 0%;
+	float: right;
+	word-spacing: 15px;
+}
+#content {
+overflow: auto;	
+}
+ul {
+	list-style: none;
+}
+#header a {
+	display: block;
+	letter-spacing: 1px;
+	text-align: center;
+	font-family: 'Englebert', serif;
+	font-weight: normal;
+	font-size: 25px;
+	color: white;
+}
+
+#header a:hover{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.title {
+	margin-top: -10px;
+	letter-spacing: 1px;
+	text-align: center;
+	font-family: 'Englebert', serif;
+	font-weight: normal;
+	font-size: 30px;
+	color: black;
+}
+.title2 {
+	text-align: center;
+	font-family: 'Muli', serif;
+	font-weight: normal;
+	font-size: 15px;
+	color: black;
+}
+
+.button {
+	    background-color: #708090; 
+	    border: none;
+	    color: white;
+	    padding: 15px 32px;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    margin: 4px 2px;
+	    cursor: pointer;
+	    font-size: 20px;
+}
+.textCenter {
+	text-align: center;
+}
+
+.corSim {
+	background-color: #EEE9E9;
+}
+
+.corNao {
+	background-color: #CDC9C9;
+}
+
+.col1, .col2{
+	padding-left: 110px;
+	font-family: 'Muli', serif;
+	font-size: 15px;
+	margin-left: 30px;
+}
+
+.col3, .col4{
+	padding-left: 50px;
+	font-family: 'Muli', serif;
+	font-size: 15px;
+	margin-left: 30px;
+}
+  
+input.reg{
+	font-family: 'Englebert', serif;
+	font-weight: normal;
+	font-size: 20px;
+}
+table {
+	font-family: 'Muli', serif;
+	font-size: 14px;
+}
+
+table tr.atr, table td.atr
+{ 
+	background: #dddddd;
+	border-radius: 3px;
+	border: white;
+}
+
+table tr.atrV, table td.atrV
+{ 
+	background: #eeeeee;
+	border-radius: 3px;
+	border: white;
+}
+
+table tr.atrB, table td.atrB
+{ 
+	background: #E8E8E8;
+	border-radius: 3px;
+	border: white;
+	text-align: center;
+}
+
+
+table tr.atrC, table td.atrC
+{ 
+	background: #E8E8E8;
+	border-radius: 5px;
+	font-family: 'Muli', serif;
+	font-weight: normal;
+	font-size: 13px;
+	color: black;
+	border: 0px;
+	text-align: center;
+}
+
+table tr.titleChalInfo, table td.titleChalInfo
+{ 
+	background: transparent;
+	border-radius: 5px;
+	font-family: 'Muli', serif;
+	font-weight: normal;
+	font-size: 15px;
+	color: black;
+	border: 0px;
+	text-align: center;
+}
+
+table tr.contentChalInfo, table td.contentChalInfo
+{ 
+	background: transparent;
+	font-family: 'Muli', serif;
+	font-weight: normal;
+	font-size: 15px;
+	color: black;
+	text-align: center;
+}
+
+table#uniqueTable {
+	border-collapse:collapse;
+	border-bottom: 1px solid gray;
+}
+
+table#uniqueTable tr {
+	border-collapse:collapse;
+	border-bottom: 1px solid gray;
+}
+
+table#uniqueTable tr td{
+	border-collapse:collapse;
+	border-bottom: 1px solid gray;
+}
+
+
+#contentTransparent [type=text], #contentTransparent textarea{
+	background-color: transparent;
+	border: 0px;
+	font-family: 'Muli', serif;
+	font-size: 15px;
+}
+
+input#inputTitle[type=text]{
+	font-family: 'Muli', serif;
+	font-weight: normal;
+	font-size: 20px;
+	color: white;
+	border: 0px;
+	background-color: rgba(0,0,0,0.75);
+	border-radius: 5px;
+	text-align: center;
+}
+
+#chalInfo {
+	width: 13%;
+	margin: 0.5% 0% 0% 15%;
+	background-color: #F9FCFF;
+	border-radius: 5px;
+	font-family: 'Muli', serif;
+	font-size: 14px;
+	color: black;
+	border: 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#chal {
+	width: 54.5%;
+	margin: -7.3% 0% 0% 29.4%;
+	padding: 10px;
+	font-family: 'Muli', serif;
+	font-size: 15px;
+	border-radius: 5px;
+	background-color: #F9FCFF;
+	float: left;
+}
+
+.tableStore
+{
+	margin-left: 15.5%;
+}
+
+.detailTeacher
+{
+    margin-left: 2%;
+	font-size: 17px;
+	font-family: 'Muli', serif;
+}
+
+
+/* Menu horizontal da loja */
+.menuhorizontal
+{
+position:relative;
+    left: 12%;
+	font-size: 18px;
+	font-family: 'Muli', serif;
+	margin: 0;
+	padding-right: 0;
+	width: auto;
+}
+
+.menuhorizontal ul
+{
+	list-style: none;
+}
+
+.menuhorizontal li
+{
+	display: inline;
+	float: left;
+	padding:0px;
+	margin-right: 0;
+	width: 300px;
+	text-align: center;
+}
+
+.menuhorizontal a
+{
+	display: block;
+	text-decoration: none;
+	padding: 6px;
+	background-color: #ffffff;
+	color: #333;
+	border-bottom: #999 1px solid;
+}
+
+.menuhorizontal :hover
+{
+	background-color: #dddddd;
+	color: #000;
+	text-decoration: none;
+}
+
+.menuhorizontal li.selected a
+{
+	background-color: #cccccc;
+	text-decoration: none;
+}
+/* Fim menu horizontal da loja*/
+
+b {
+	text-decoration: none;
+	color: black;
+}
+
+
+#top_menu b {
+	padding: 0px 0px 0px 20px;
+	
+}
+#top_menu ul {
+	margin-left: 86%;
+	margin-top: 0%;
+}
+
+#top_menu b{
+	z-index: 0;
+	float: left;
+	display: block;
+	text-align: center;
+	font-family: 'Englebert', serif;
+	font-weight: normal;
+	color: white;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#top_menu a:hover {
+	text-decoration: none;
+	color: #000000;
+	text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
