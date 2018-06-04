@@ -187,12 +187,12 @@ while($data = mysqli_fetch_array($sql)) {
 
 				//validando o cpf
 				
-			      /*for(var i in array_cpf){
+			      for(var i in array_cpf){
 					if(cpf == array_cpf[i]){
 						alert("CPF já cadastrado");
 						return false;
 					}
-				}*/
+				}
 													
 				var digits = (""+cpf).split("");
 				

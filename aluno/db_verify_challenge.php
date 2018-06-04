@@ -114,7 +114,7 @@ else{
 		}
 
 		mysqli_query($con, "UPDATE characterr set bp = bp + '$row[3]' WHERE user_id = '$id'") or die(mysqli_error($con));
-		//mysqli_query($con, "INSERT INTO challenge_overcome (user_id, challenge_id) VALUES ('$id','$challenge_id')") or die(mysqli_error($con));
+		mysqli_query($con, "INSERT INTO challenge_overcome (user_id, challenge_id) VALUES ('$id','$challenge_id')") or die(mysqli_error($con));
 		mysqli_close($con);
 
 		shell_exec("cd opt/lampp/htdocs/projeto_piratas/aluno");
