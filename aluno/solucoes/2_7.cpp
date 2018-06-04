@@ -1,3 +1,10 @@
-adicionar valores bases/minimos para os atributos
-adicionar imagem nas colunas de missões e desafios
-melhorar ranking
+#include <stdio.h>
+#include <iostream>
+
+int main()
+{
+	int n=30*50;
+	
+	n = n/60.6;
+	std::cout<<n<<std::endl;
+}

@@ -73,7 +73,7 @@ mysqli_close($con);
 
 echo "<html><body>";
 echo "<p>Problema cadastrado com sucesso.</p>";
-echo "<p><a href=db_list_missions.php>Continuar</a></p>";
+echo "<p><a href=missions.php>Continuar</a></p>";
 echo "</body></html>";
 ?>	
 

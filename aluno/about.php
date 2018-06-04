@@ -167,35 +167,34 @@ $row = mysqli_fetch_row($sql);
 					<div id="text">
 					<h1>Cr&eacute;ditos</h1>
 					
-                    <p class="h2">Orientadores</p><br>
+                    <p class="h2">Idealizadores</p><br>
                     
                     <div style="height:170px; background-color:#D3DFEE">
                     <img src="images/about/ynogutti.jpg" height="150" style="margin-top:10px; margin-left:20px;"/>
                     <h3 style="padding-left:300px; margin-top:-90px">Prof. Carlos Alberto Ynoguti</h3>
                     </div>
                     
-                   	<div style="height:170px;">
-                    <img src="images/about/rosimara.jpg" height="150" style="margin-top:10px; margin-left:20px;"/>
-                    <h3 style="padding-left:300px; margin-top:-90px">Profa. Rosimara Beatriz Arci Salgado</h3>
-                    </div>
-					<br>
-
-                    <p class="h2">Co-orientador</p><br>
-                    
-                    <div style="height:170px; background-color:#D3DFEE">
+		    <div style="height:170px;">
                     <img src="images/about/jonas.jpg" height="150" style="margin-top:10px; margin-left:20px;"/>
                     <h3 style="padding-left:300px; margin-top:-90px">Eng. Jonas Vilas Boas Moreira</h3>
                     </div>
                     <br>
 
+                    <p class="h2">Orientadores</p><br>
+                    <div style="height:170px;background-color:#D3DFEE"">
+                    <img src="images/about/rosimara.jpg" height="150" style="margin-top:10px; margin-left:20px;"/>
+                    <h3 style="padding-left:300px; margin-top:-90px">Profa. Rosimara Beatriz Arci Salgado</h3>
+                    </div>
+                    
+
                     <p class="h2">Programadores</p><br>
                     
-                    <div style="height:170px; background-color:#D3DFEE">
+                    <div style="height:170px;">
                     <img src="images/about/carol.jpg" height="150" style="margin-top:10px; margin-left:20px;"/>
                     <h3 style="padding-left:300px; margin-top:-90px">Caroline Tenório Ribeiro</h3>
                     </div>
                     
-                    <div style="height:170px;">
+                    <div style="height:170px;background-color:#D3DFEE"">
                     <img src="images/about/rodrigo.jpg" height="150" style="margin-top:10px; margin-left:20px;"/>
                     <h3 style="padding-left:300px; margin-top:-90px">Rodrigo Carlos Brezolin Martins</h3>
                     </div>
@@ -206,15 +205,21 @@ $row = mysqli_fetch_row($sql);
                     <h3 style="padding-left:300px; margin-top:-90px">Danilo Germiniani Virginio</h3>
                     </div>
                     <br>
+
+		    <div style="height:170px;background-color:#D3DFEE"">
+                    <img src="images/about/lucas.jpg" height="150" style="margin-top:10px; margin-left:20px;"/>
+                    <h3 style="padding-left:300px; margin-top:-90px;">Lucas Riboli Freire</h3>
+                    </div>
+                    <br>
                     
                     <p class="h2">Designers gráficos</p><br>
                     
-                    <div style="height:170px; background-color:#D3DFEE">
+                    <div style="height:170px;">
                     <img src="images/about/leandro.jpg" height="150" style="margin-top:10px; margin-left:20px;"/>
                     <h3 style="padding-left:300px; margin-top:-90px">Leandro Mendes Borelli Magalhães</h3>
                     </div>
                     
-                    <div style="height:170px;">
+                    <div style="height:170px;background-color:#D3DFEE"">
                     <img src="images/about/eduardo.jpg" height="150" style="margin-top:10px; margin-left:20px;"/>
                     <h3 style="padding-left:300px; margin-top:-90px">Eduardo Heluany Duarte</h3>
                     </div>
@@ -222,7 +227,7 @@ $row = mysqli_fetch_row($sql);
                     
                     <p class="h2">Criador dos desafios</p><br>
                     
-                    <div style="height:170px; background-color:#D3DFEE">
+                    <div style="height:170px; ">
                     <img src="images/about/mateus.jpg" height="150" style="margin-top:10px; margin-left:20px;"/>
                     <h3 style="padding-left:300px; margin-top:-90px">Mateus Madeira Mendes</h3>
                     </div>

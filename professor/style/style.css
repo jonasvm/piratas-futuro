@@ -197,6 +197,14 @@ ul li.bar_main a{
 	height: 41px;
 }
 
+ul li.bar_messages a{
+	float: left;
+	display: block;
+	background: url(../images/background/bg_bar25.jpg);
+	background-repeat: no-repeat;
+	height: 41px;
+}
+
 ul li.bar_classes a{
 	float: left;
 	display: block;

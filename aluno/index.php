@@ -26,9 +26,8 @@ date_default_timezone_set("Brazil/East");
 $cur_date = date('d-m-Y H:i:s') ; //data atual
 $last_l = strtotime($lastLogin[0]); //data no banco de dados em formato 'numérico'
 $c_hour = strtotime( $cur_date ); //data atual no formato 'numérico'
-
+$c_hour= $c_hour+3600;
 $e_l = floor((($c_hour - $last_l)/60)/10); //quantidade de vida/energia a aumentar
-
 $total = (($c_hour - $last_l)/60); //diferença entre a data atual e a data do banco de dados (min + seg)
 $min = ($total - (10*$e_l)); //apenas os minutos decorridos desde a ultima atualização (formato 'numérico')
 $dif = $min*60; //diferença em segundos
@@ -82,7 +81,47 @@ mysqli_query($con, "INSERT into activity_student (name, activity, data, hour) VA
         <link rel="stylesheet" type="text/css" href="style/style1280.css" media="only screen and (min-width: 1246px) and (max-width:1315px)"/>
 		<link rel="stylesheet" type="text/css" href="style/style1920.css" media="only screen and (min-width: 1446px) and (max-width:1920px)"/>
         <link rel="stylesheet" type="text/css" href="style/style.css" media="only screen and (min-width:1116px) and (max-width:1445px)"/>
-    <link rel="shortcut icon" href="images/favicon.ico"/> <link rel="shortcut icon" href="images/favicon.ico"/> </head>
+    <link rel="shortcut icon" href="images/favicon.ico"/> <link rel="shortcut icon" href="images/favicon.ico"/> 
+
+
+
+
+
+	<script>
+	//timer em fase de teste
+	//10 minutos para recuperar 1 de vida/1 de energia
+	// marca a data para q vai contar
+	var y = new Date().getTime();
+	var countDownDate = Math.round(y / minutes);
+	var min = 1000 * 60;
+	// atualiza de 1 em 1 segundo
+	var x = setInterval(function() {
+
+	    // pega a data atual
+	    var aux = new Date().getTime();
+	    var now = Math.round(aux / minutes);
+	    
+	    // faz a conta
+	    var distance = countDownDate - now;
+	    
+	    // calcula minutos e segundos
+	    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	    
+	    // guarda no elemento com id=demo
+	    document.getElementById("demo").innerHTML = minutes + "m " + seconds + "s ";
+	    
+	    // checa se deve acabar a contagem ou nao
+	    if (distance < 0 && <?php echo $row[3] ?> <  <?php echo $row[4] ?>) {
+		countDownDate = countDownDate + 10;
+	    }
+	    else{
+		clearInterval(x);
+	    }
+	}, 1000);
+	</script>
+
+    </head>
 
     <body>
 		<div id="main">
@@ -172,7 +211,7 @@ mysqli_query($con, "INSERT into activity_student (name, activity, data, hour) VA
 									$html .= '<div class="arrowLeft"></div>';
 								else
 									$html .= '<div class="arrowRight"></div>';
-								$html .= "<p>" . $row['subject'] . "</p>";
+								$html .= "<p>" . utf8_encode($row['subject']) . "</p>";
 								$html .= '<p class="published"><br>Publicado por ' . $row1[0] . ' em ' . $date . '</p>';
 								$html .= '</div><br>';
 							}

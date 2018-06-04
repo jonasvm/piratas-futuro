@@ -56,10 +56,10 @@
 		</div>
 		<div id="content">
 			<div id="text">
-				<p class="h2">Usuário não encontrado!</p><br>
-				<p>Se você aina não tem um usuário, cadastre-se agora clicando <a href="register.php">aqui</a>.</p>
+				<p class="h2"><?php echo utf8_encode("Usuário não encontrado!") ?></p><br>
+				<p><?php echo utf8_encode("Se você ainda não tem um usuário, cadastre-se agora clicando") ?> <a href="register.php">aqui</a>.</p>
 				<br>
-				<p><a href="index.php">Clique aqui</a> para voltar para a tela de login</p>
+				<p><a href="index.php"><?php echo utf8_encode("Clique aqui</a> para voltar para a tela de login") ?></p>
 			</div>
 		</div>
 	</body>

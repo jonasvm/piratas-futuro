@@ -202,13 +202,20 @@ while($data = mysqli_fetch_array($sql)) {
 	<body>
 		<div id="main">
 			<div id="header">
+			<div id="top_menu">
+					<ul id="top_menu">
+						<li><a href="help.php">Ajuda</a></li>
+						<li><a href="about.php">Créditos</a></li>
+						<li><a href="contact.php">Contato</a></li>
+						<li><a href="logout.php">Sair</a></li>
+					</ul>
+				</div>
             	<div class="adm">Administrador</div>
                 <ul class="menu">
                 	<li><a href="index.php">Desafios</a></li>
 					<li><a href="index_missions.php">Miss&otilde;es</a></li>
                     <li><a href="index_store.php">Loja</a></li>
 					<li><a href="index_teacher.php">Professor</a></li>
-                    <li><a href="logout.php">Sair</a></li>
                 </ul>
             </div>
 			<div id="content">

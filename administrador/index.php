@@ -49,12 +49,21 @@ if(isset($_GET["chal"]))
 		    cursor: pointer;
 		    font-size: 20px;
 		}
+		
 	</style>	
 	</head>
 
 	<body>
 		<div id="main">
 			<div id="header">
+				<div id="top_menu">
+					<ul id="top_menu">
+						<li><a href="help.php">Ajuda</a></li>
+						<li><a href="about.php">Créditos</a></li>
+						<li><a href="contact.php">Contato</a></li>
+						<li><a href="logout.php">Sair</a></li>
+					</ul>
+				</div>
 				
             			<div class="adm">Administrador</div>
 				<ul class="menu">
@@ -62,7 +71,6 @@ if(isset($_GET["chal"]))
 					<li><a href="index_missions.php">Miss&otilde;es</a></li>
 				    	<li><a href="index_store.php">Loja</a></li>
 					<li><a href="index_teacher.php">Professor</a></li>
-				    	<li><a href="logout.php">Sair</a></li>
 				</ul>
             		</div><!-- fim do header -->
 			<div id="content">

@@ -162,7 +162,7 @@ $row = mysqli_fetch_row($sql);
 						
 						$_SESSION["id_question"] = $id_question;
 						
-						echo "<p>" . $question[0] . "</p>";
+						echo "<p>" . utf8_encode($question[0]) . "</p>";
 	
 						$html = '<br>';
 						$html .= '<p><form id="question_buttons" method="post" action="db_update_survey.php" ></p>';

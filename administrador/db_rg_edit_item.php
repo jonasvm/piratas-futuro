@@ -18,9 +18,13 @@ $benType = $_POST["benType"];
 //acesso ao bd
 include "conecta_mysql.inc";
 
+if(is_uploaded_file($_FILES['image']['tmp_name'])) {
 if (!empty($_FILES["image"])){
+echo "aqui";
+
+ 
+
 	$foto = $_FILES["image"];
-	
 	$erro=0;
         $error="";
 
@@ -29,10 +33,10 @@ if (!empty($_FILES["image"])){
         if(!preg_match("/^image\/(pjpeg|jpeg|png|gif|bmp)$/", $foto["type"])){ 
            $error = "Isso não é uma imagem.";
            $erro = 1;
+	   echo $foto["type"];
         }
-
         // Pega as dimensões da imagem 
-        $dimensoes = getimagesize($foto["tmp_name"]);   
+        //$dimensoes = getimagesize($foto);   
 	echo "$erro";
 	// Se não houver nenhum erro 
         if ($erro == 0) {
@@ -46,6 +50,10 @@ if (!empty($_FILES["image"])){
 		// Caminho de onde ficará a imagem 
 		$caminho_imagem = "fotos_armas/" . $nome_imagem;   
 
+		if(isset($_POST["submit"]) && isset($_FILES['file'])) {
+    			$file_temp = $_FILES['file']['tmp_name'];   
+    			$info = getimagesize($file_temp);
+		}
 		// Faz o upload da imagem para seu respectivo caminho 
 		move_uploaded_file($foto["tmp_name"], $caminho_imagem); 
 		                          
@@ -77,8 +85,10 @@ if (!empty($_FILES["image"])){
 	else
         	echo $error;
 }
+}
 else
 {
+    echo "yo";
     echo $name;
     echo $old_name;
     //exit(1);
@@ -104,17 +114,19 @@ else
 			echo "Erro ao editar Item (Imagem n&atilde;o editada)";
 	}
 }
-//fechando conex&atilde;o	
-mysqli_close($con);
 
-/*if($type == 1)
+if($type == 1)
 	header("Location: armas_de_fogo.php");
-else if($type == 2)
+elseif($type == 2)
 	header("Location: index_store.php");
-else if($type == 3)
+elseif($type == 3)
 	header("Location: armaduras.php");
 else
-	header("Location: consumiveis.php");*/
+	header("Location: consumiveis.php");
+	
+
+//fechando conex&atilde;o	
+mysqli_close($con);
 
 
 ?>

@@ -164,8 +164,8 @@ $row = mysqli_fetch_row($sql);
 			</div>
 			<div id="content">
 				<div id="text">
-					<embed src="videos/video.mp4" height="98%" width="100%">
-                    
+					<!--  <embed src="videos/video.mp4" height="98%" width="100%"> -->
+                    			<p>Em desenvolvimento...</p>
 					</div>
 				</div>
 		</div> 

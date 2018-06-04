@@ -91,7 +91,7 @@ fclose($abrearquivo);
 
 echo "<html><body>";
 echo "<p>Problema cadastrado com sucesso.</p>";
-echo "<p><a href=missions.php>Continuar</a></p>";
+echo "<p><a href=challenges.php>Continuar</a></p>";
 echo "</body></html>";
 ?>	
 

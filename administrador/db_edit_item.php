@@ -115,13 +115,20 @@ while($data = mysqli_fetch_array($sql1)) {
 	<body>
 		<div id="main">
 			<div id="header">
+			<div id="top_menu">
+					<ul id="top_menu">
+						<li><a href="help.php">Ajuda</a></li>
+						<li><a href="about.php">Créditos</a></li>
+						<li><a href="contact.php">Contato</a></li>
+						<li><a href="logout.php">Sair</a></li>
+					</ul>
+				</div>
             	<div class="adm">Administrador</div>
                 <ul class="menu">
                 	<li><a href="index.php">Desafios</a></li>
 					<li><a href="index_missions.php">Miss&otilde;es</a></li>
                     <li><a href="index_store.php">Loja</a></li>
 					<li><a href="index_teacher.php">Professor</a></li>
-                    <li><a href="logout.php">Sair</a></li>
                 </ul>
             </div>
 			<div id="content">
@@ -164,15 +171,17 @@ while($data = mysqli_fetch_array($sql1)) {
 						
 						<p class="h2">Trocar imagem</p>
 						<input type="file" name="image" id="image">
-						<?php mysqli_close($con); ?>	
+						<?php 	$sql3 = mysqli_query($con, "SELECT quant FROM consumiveis WHERE name = '$name'") or die(mysqli_error($con));	
+							$row3 = mysqli_fetch_row($sql3);
+							mysqli_close($con); ?>	
 					</td>
 					<td class="col4" width="300px">
 						<p>Nome:<br />
-						<input name="title" type="text" id="title" value="<?php echo $row[1] ?>"></p>
+						<input name="title" type="text" id="title" value="<?php echo utf8_encode($row[1]) ?>"></p>
 						<p>Descri&ccedil;&atilde;o:<br />
-						<textarea name="subject" id="subject" cols="30" rows="3"><?php echo $row[2] ?></textarea></p>
+						<textarea name="subject" id="subject" cols="30" rows="3"><?php echo utf8_encode($row[2]) ?></textarea></p>
 						<p>Benef&iacute;cio:<br>
-						<input type="text" size="7" name="benValue" id="benValue" value="<?php echo $benefit[0] ?>"/>
+						<input type="text" size="7" name="benValue" id="benValue" value="<?php if($item_type != 4) echo $benefit[0]; else echo $row3[0]; ?>"/>
 						<?php
 						//Beneficio do item
 						if($item_type != 4)

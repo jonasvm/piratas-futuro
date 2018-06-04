@@ -175,7 +175,7 @@ $row = mysqli_fetch_row($sql);
 							<p>Se alguma dessas abas não estiver como descrito acima, contateo administrador para correção.</p>
 							<p>Se estiver tudo certo, seu personagem já está cadastrado e pronto para as atividades!</p>
 							<br>
-							<p>A parte superior da página ficará sempre visível. Ela contém sua foto, a quantidade de  <img width="15px" height="15px" src="images/life.png"/>vida e   <img width="15px" height="15px" src="images/stamina.png"/>energia atual/maxima,
+							<p>A parte superior da página ficará sempre visível. Ela contém sua foto, a quantidade de  <img width="15px" height="15px" src="images/life.png"/> vida e   <img width="15px" height="15px" src="images/energy.png"/> energia atual/maxima,
 							e a quantidade de  <img width="30px" height="17px" src="images/exp.png"/>experiência total obtida.</p>
 							<br>
 							<p>Logo abaixo está a barra de menu, onde é feita toda a interação com o jogo.</p>
