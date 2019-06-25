@@ -1,4 +1,4 @@
-# Piratas do Futuro Project
+# Piratas do Futuro RPG
 # History
 This project was created during my last year in computer engineering graduation course. 
 It was selected by FAPEMIG (if I'm not wrong) and received one year of sponsorship, wich was used to design the first version of the software - which was also presented as my TCC (in Brasil, the conslusion work).
